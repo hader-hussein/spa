@@ -1,0 +1,7 @@
+[dir="ltr"] input::placeholder{
+     text-align: left;
+}
+[dir="ltr"] .navber-index .navbar-nav.me-auto {
+     margin-right: 0px!important;
+     margin-left: auto;
+ }
