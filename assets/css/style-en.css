@@ -5,3 +5,17 @@
      margin-right: 0px!important;
      margin-left: auto;
  }
+ [dir="rtl"] .multi-select-menuitem input {
+ 
+     margin-right: -18px;
+ }
+ [dir="ltr"] .multi-select-menuitem input {
+ 
+     margin-left: -18px;
+ }
+ [dir="rtl"] .ul-item-teachers{
+    padding-right: 44px;
+ }
+ [dir="ltr"] .ul-item-teachers{
+    padding-left: 44px;
+ }

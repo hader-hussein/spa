@@ -57,5 +57,13 @@ $(".counter").each(function () {
 });
 
 /****/ 
-
-  
+$(function(){
+  $('#people').multiSelect();
+});
+$(function(){
+  $('#peoplet').multiSelect();
+});
+$(function(){
+  $('#peopletr').multiSelect();
+});
+   

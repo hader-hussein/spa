@@ -62,6 +62,7 @@ ul li{
 .btn-link:hover{
      background-color: var(--color-primary);
      color: var(--color-h);
+     border: 1px solid var(--color-default);
    
 }
 
@@ -230,9 +231,7 @@ p{
           border-radius: 16px;
           height: auto;
      }
-     .span-title{
-color: var(--color-default);
-     }
+   
      .content-subscriptions{
         box-shadow: 0px 2px 8px 0px rgba(0, 12, 55, 0.1);
         border-radius: 46px;   
@@ -255,48 +254,178 @@ color: var(--color-default);
      .ul-team li{
 color: var(--color-p);
      }
-    
-     .span-title span{
-        text-decoration: line-through;
-     }
-     .content-subscriptions-childern{
-        border: 4px solid var(--color-default);
-        border-radius: 46px; 
-        height: 100%
-     }
-     .comp-prices h5{
-        background-color: var(--color-primary);
-        border-radius: 8px;
-        padding: 5px 0px;
-     }
-     .img-subscript{
-        height: 200px;
-        width: 100%;
-        border-radius: 18px;
-        border-top-left-radius: 46px; 
-        border-top-right-radius: 46px; 
-      
-     }
-    
-    
-     .body-defintione ul{
-        margin-bottom: 0px;
-     }
-     @media (min-width:990px) {
-        .body-defintione{
-            display: grid;
-            grid-template-rows: 0.25fr 2.5fr 0.15fr 0.50fr;
-    
-         }
-     }
-     @media (max-width: 550px){
-        .img-index {
-            object-position: right;
-        }
-        .row-sub .col{
-            margin-bottom: 10px;
-        }
-     }
+   .content-subscriptions-childern:hover{
+    box-shadow: 0px 2px 8px 0px rgba(0, 12, 55, 0.1);
+    transform: scale(1.05)
+   } 
+  .content-subscriptions-childern img{
+   max-height: 550px;
+   height: auto;
+  }
+  .col-mn .col-mn-dmn{
+    box-shadow: 0px 2px 8px 0px rgba(0, 12, 55, 0.1);
+    height: 100%;
+    border-radius: 8px;
+    display: grid;
+    align-items: center;
+  } 
+  /*select*/
+  .multi-select-container {
+    display: inline-block;
+    position: relative;
+}
+
+.multi-select-menu {
+    position: absolute;
+    left: 0;
+    top: 0.8em;
+    z-index: 1;
+    float: left;
+    min-width: 100%;
+    background: #fff;
+    margin: 1em 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.multi-select-menuitem {
+    display: block;
+    font-size: 0.875em;
+    padding: 0.6em 2em 0.6em 30px;
+    white-space: nowrap;
+}
+
+.multi-select-menuitem--titled:before {
+    display: block;
+    font-weight: bold;
+    content: attr(data-group-title);
+    margin: 0 0 0.25em -20px;
+}
+
+.multi-select-menuitem--titledsr:before {
+    display: block;
+    font-weight: bold;
+    content: attr(data-group-title);
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.multi-select-menuitem + .multi-select-menuitem {
+    padding-top: 0;
+}
+
+.multi-select-presets {
+    border-bottom: 1px solid #ddd;
+}
+
+.multi-select-menuitem input {
+    position: absolute;
+    margin-top: 0.25em;
+}
+
+.multi-select-button {
+    display: inline-block;
+    font-size: 0.875em;
+    padding: 0.2em 0.6em;
+    max-width: 16em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: -0.5em;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: default;
+}
+
+.multi-select-button:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0.4em 0.4em 0 0.4em;
+    border-color: #999 transparent transparent transparent;
+    margin-left: 0.4em;
+    vertical-align: 0.1em;
+}
+
+.multi-select-container--open .multi-select-menu {
+    display: block;
+}
+
+.multi-select-container--open .multi-select-button:after {
+    border-width: 0 0.4em 0.4em 0.4em;
+    border-color: transparent transparent #999 transparent;
+}
+
+.multi-select-container--positioned .multi-select-menu {
+    /* Avoid border/padding on menu messing with JavaScript width calculation */
+    box-sizing: border-box;
+}
+
+.multi-select-container--positioned .multi-select-menu label {
+    /* Allow labels to line wrap when menu is artificially narrowed */
+    white-space: normal;
+}
+ 
+  .position-menu-within {
+    width: 18em;
+    height: 15em;
+    background: #eee;
+    overflow: auto;
+    padding: 2em 0 0 2em;
+}
+
+.modal-example .multi-select-menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 50%;
+    min-width: 0;
+    overflow: auto;
+    border: none;
+    border-radius: 0.3em;
+    box-shadow: 0 1em 3em rgba(0,0,0,0.4);
+}
+
+.modal-example .multi-select-menuitem {
+    font-size: 1em;
+    padding: 1.5em 2.5em 1.5em 3.5em;
+}
+
+.modal-example .multi-select-menuitem + .multi-select-menuitem {
+    padding-top: 0;
+}
+
+.modal-example .multi-select-menuitem input {
+    margin-left: -2.5em;
+}
+
+.multi-select-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.multi-select-container--open .multi-select-modal {
+    display: block;
+}
+  
 
      /**end-video*/
      /*number-count*/
@@ -450,7 +579,11 @@ max-height: 400px;
  
 @media (max-width: 550px){
      .breadcrumb-bar{
-          height: 200px;
+          height: 300px;
+      }
+      .breadcrumb-title h2{
+font-size: 20px;
+
       }
 }
 @media (min-width: 550px) and (max-width:989px){
@@ -609,6 +742,125 @@ font-size: 14px;
         }
       
       /*end-features*/
+      /*techers*/
+      .fa-star{
+        color: var(--color-p);
+      }
+      .fa-star.selected {
+        color: #f8d05a;
+    }
+    .all-btn .btn-primary{
+        background-color: var(--color-default);
+        color: var(--color-white);
+        text-decoration: none;
+        font-family: 'Cairo', sans-serif;
+        border: 0px;
+        padding-right: 2.5rem!important;
+    padding-left: 2.5rem!important;
+    }
+    .all-btn .btn-primary:hover{
+        background-color: var(--color-primary);
+    }
+    .card-instrutor{
+        box-shadow: 0px 2px 8px 0px rgba(0, 12, 55, 0.1);
+        width: 100%;
+    }
+    .instructor-img img{
+        height: 250px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .img-profile-defintion {
+        height: 200px;
+        width: 200px;
+    }
+    .title-instrucror {
+        color: var(--color-default);
+    }
+    .title-about-teach i{
+        color: var(--color-primary);
+    }
+    .ul-item-teachers li{
+        color: var(--color-p);
+        list-style: disc;
+        margin-bottom: 10px;
+    }
+    .it-progress-bar-item label {
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 12px;
+        display: inline-block;
+        color: var(--color-default);
+    }
+    .it-progress-bar .progress {
+        overflow: visible;
+        border-radius: 10px;
+        background: rgba(137,186,180,.3);
+        height: 10px;
+        margin-bottom: 30px;
+    }
+    .it-progress-bar .progress-bar {
+        background-color: var(--color-default);
+        border-radius: 30px;
+        position: relative;
+        overflow: visible;
+        height: 100%;
+        border-radius: 10px;
+        top: 0;
+    }
+    .it-progress-bar .progress-bar span {
+        position: absolute;
+        left: 0;
+        top: -30px;
+        transform: translateY(-50%);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1;
+        color: var(--color-default);
+        background-color: var(--color-primary);
+        padding: 5px 7px;
+    }
+    .it-progress-bar .progress-bar span::after {
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        height: 10px;
+        width: 10px;
+        background-color: var(--color-primary);
+        content: "";
+        transform: translateX(-50%) rotate(-45deg);
+    }
+    .component-reviews{
+        box-shadow: 0px 2px 8px 0px rgba(0, 12, 55, 0.1);
+ 
+    }
+    .img-stedent-reviews {
+        width: 70px;
+        height: 70px;
+        max-width: 70px;
+    }
+    
+      /*techers*/
+      /*payment*/
+      .content-form-payment{
+        box-shadow: 0px 2px 8px 0px rgba(0, 12, 55, 0.1);
+      }
+      .form-pument .accordion-button:not(.collapsed)::after, .form-pument .accordion-button::after{
+        display: none;
+      }
+      .img-pay{
+        width: 105px;
+      }
+      @media (max-width:550px) {
+        .img-pay{
+            width: 70px;
+          }
+          .accordion-header .form-check-label  h6{
+            font-size: 16px !important;
+          }
+      }
+      /*payment*/
       /*application*/
       .component-header-application{
         background: linear-gradient(-47deg,#FFDF80 0%,  #805020 100%);
@@ -732,9 +984,14 @@ font-size: 14px;
 .content-f-app img{
     width: 65px;
     height: 65px;
+    border-radius: 50%;
 }
+
 .content-f-app{
     box-shadow: 0px 2px 8px 0px rgba(0, 12, 55, 0.1);
+}
+.content-f-app:hover{
+    background-color: var(--color-primary);
 }
 .img-app-col .w-70{
     width: 70%;
@@ -761,6 +1018,10 @@ width: 40% !important;
         margin: auto;
     }
     
+}
+.form-check-input:focus {
+box-shadow: 0px 0px 0px transparent;
+
 }
       /*and-application*/
      /*footer*/
@@ -884,6 +1145,16 @@ width: 40% !important;
           font-size: 18px;
       }
      /*end-footer*/
+     /*information*/
+     .form-check-input:checked {
+        background-color: var(--color-default);
+        border-color:  var(--color-default);
+    }
+    .form-label{
+        font-size: 1.050em;
+        color: var(--color-p);
+    }
+     /*information
      /*med*/
      @media (min-width: 1700px){
           .container, .container-lg, .container-md, .container-sm, .container-xl {
@@ -900,7 +1171,8 @@ width: 40% !important;
            {
     font-size: 1.15em;}
            .component-footer p ,.footer-nav li a,.forgot-link, .link_color,.btn-start,
-           .contentus-footer p, .col-content-footer a,p
+           .contentus-footer p, .col-content-footer a,p,.content-instoret p,.content-reviews p,.ul-item-teachers li ,
+           .form-label,.form-check-label
            {
     font-size: 1.5em !important;
 }
