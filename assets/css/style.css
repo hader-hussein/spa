@@ -1201,4 +1201,9 @@ box-shadow: 0px 0px 0px transparent;
 
 
      }
+     @media (max-width:550px) {
+        .text-defintion .ul-feayures,.row>*{
+            padding: 0px;
+        }
+     }
 
