@@ -1,0 +1,324 @@
+:root {
+     --color-default: #805020;
+     --color-primary: #FFDF80;
+     --color-background:#f5f6f8;
+     --color-secondary: #313132;
+     --color-text:#555;
+     --color-p:#666;
+     --color-h: #000;
+     --color-white:#fff;
+   }
+
+.img-name-dashboard{
+background-color: var(--color-primary);
+}
+.img-student-profile{
+     width: 50%;
+     display: flex;
+     margin: auto;
+     height:auto;
+}
+/*nav-dashboard*/
+.navbar-dashboard .navbar-nav {
+     flex-direction: column;
+ }
+ .navbar-dashboard .navbar-nav .nav-item .nav-link{
+     color: var(--color-secondary);
+     font-size: 18px;
+     font-weight: 500;
+     display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+ } 
+ .navbar-dashboard .navbar-nav .nav-item .active{
+     
+  
+     color: var(--color-default);
+     font-size: 18px;
+     font-weight: 500;
+ }
+ .navbar-dashboard .navbar-nav .nav-item .nav-link img{
+     width: 45px;
+     height: auto;
+ }
+ [dir="rtl"] .navbar-dashboard .navbar-nav .nav-item .nav-link img{
+     margin-left: 10px;
+ }
+ .content-teacher-link{
+     box-shadow: 0px 2px 8px 0px rgba(0, 12, 55, 0.1);
+ }
+/*end-nav-dashboard*/
+/*content-lecture*/
+.content-lecture{
+     box-shadow: 0px 2px 8px 0px rgba(0, 12, 55, 0.1); 
+}
+.component-content-tiem li{
+     color: var(--color-p);
+     font-size: 18px;
+     list-style: square;
+     
+}
+::marker,.span-number-span{
+     color: #805020;
+}
+.img-item-video{
+     width: 50px;
+}
+.img-dash{
+     width: 250px;
+}
+.span-item-text{
+     box-shadow: 0px 2px 8px 0px rgba(0, 12, 55, 0.1); 
+     border-radius: 8px;
+     color: var(--color-p);
+}
+.content-number-n{
+   
+     background-color: var(--color-primary);
+     padding: 54px 20px;
+     position: absolute;
+     border-bottom-left-radius: 16px;
+     border-bottom-right-radius: 16px;
+     top:0px;
+     right: 0px;
+
+}
+.compon-item{
+     display: grid;
+    align-items: center;
+    justify-content: end;
+}
+.component-tap .nav-tabs {
+border-bottom: 0px;
+}
+.component-tap .nav-tabs .nav-link{
+     color: var(--color-h);
+     font-size: 18px;
+     font-weight: bold;
+} 
+.component-tap .nav-tabs .nav-link:hover,
+.component-tap .nav-tabs .nav-link.active
+{
+     border: 0px;
+     border-bottom: 1px solid var(--color-default);
+     color: var(--color-default);
+}
+
+.content-calendar-day{
+background-color: #b77e45bd;
+color: var(--color-white);
+border-radius: 8px;
+padding: 10px 15px;
+}
+.row-clander .component-calendar-day{
+     color: var(--color-p);
+     font-size: 18px;
+}
+.content-calendar-day a{
+     color: var(--color-white);
+     font-size: 18px;
+}
+/*content-lecture*/
+/*clander*/
+.nav-tabs-clander{
+     box-shadow: 0px 2px 8px 0px rgba(0, 12, 55, 0.1);   
+     border-radius: 8px;
+     padding: 20px 10px;
+}
+.elegant-calencar {
+     max-width: 700px;
+     text-align: center;
+     position: relative;
+     margin: 0 auto;
+     overflow: hidden;
+     border-radius: 5px;
+     -webkit-box-shadow: 0px 19px 27px -20px rgba(0, 0, 0, 0.16);
+     -moz-box-shadow: 0px 19px 27px -20px rgba(0, 0, 0, 0.16);
+     box-shadow: 0px 19px 27px -20px rgba(0, 0, 0, 0.16); }
+   
+   .wrap-header {
+     position: relative;
+     width: 45%;
+     background: var(--color-primary); }
+     @media (max-width: 767.98px) {
+       .wrap-header {
+         width: 100%;
+         padding: 20px 0; } }
+   
+   #header {
+     width: 100%;
+     position: relative; }
+     #header .pre-button, #header .next-button {
+       cursor: pointer;
+       width: 1em;
+       height: 1em;
+       line-height: 1em;
+       border-radius: 50%;
+       position: absolute;
+       top: 50%;
+       -webkit-transform: translateY(-50%);
+       -ms-transform: translateY(-50%);
+       transform: translateY(-50%);
+       font-size: 18px; }
+       #header .pre-button i, #header .next-button i {
+         color: #fff; }
+   
+   .pre-button {
+     left: 5px; }
+   
+   .next-button {
+     right: 5px; }
+   
+   .head-day {
+     font-size: 8em;
+     line-height: 1;
+     color: #fff; }
+   
+   .head-month {
+     font-size: 2em;
+     line-height: 1;
+     color: #fff;
+     font-size: 18px;
+     text-transform: uppercase; }
+   
+   .calendar-wrap {
+     width: 100%;
+     background: #fff;
+     padding: 40px 20px 20px 20px; }
+   
+   #calendar {
+     width: 100%; }
+   
+   #calendar tr {
+     height: 3em; }
+   
+   .table-clander thead tr {
+     color: #000;
+     font-weight: 700; }
+   
+   .table-clander tbody tr {
+     color: #000; }
+   
+   .table-clander tbody td {
+     width: 14%;
+     border-radius: 50%;
+     cursor: pointer;
+     -webkit-transition: all 0.2s ease-in;
+     -o-transition: all 0.2s ease-in;
+     transition: all 0.2s ease-in;
+     position: relative;
+     z-index: 0; }
+    .table-clander tbody td:after {
+       position: absolute;
+       top: 50%;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       content: '';
+       width: 44px;
+       height: 44px;
+       margin: 0 auto;
+       -webkit-transform: translateY(-50%);
+       -ms-transform: translateY(-50%);
+       transform: translateY(-50%);
+       border-radius: 50%;
+       -webkit-transition: 0.3s;
+       -o-transition: 0.3s;
+       transition: 0.3s;
+       z-index: -1; }
+       @media (prefers-reduced-motion: reduce) {
+        .table-clander tbody td:after {
+           -webkit-transition: none;
+           -o-transition: none;
+           transition: none; } }
+   
+   .table-clander tbody td:hover, .selected {
+     color: #fff;
+     border: none; }
+    .table-clander tbody td:hover:after, .selected:after {
+       background: #2a3246; }
+   
+   .table-clander tbody td:active {
+     -webkit-transform: scale(0.7);
+     -ms-transform: scale(0.7);
+     transform: scale(0.7); }
+   
+   .table-clander #today {
+     color: #fff; }
+     #today:after {
+       background: var(--color-primary); }
+   
+   #disabled {
+     cursor: default;
+     background: #fff; }
+   
+   #disabled:hover {
+     background: #fff;
+     color: #c9c9c9; }
+     #disabled:hover:after {
+       background: transparent; }
+   
+   #reset {
+     display: block;
+     position: absolute;
+     right: 0.5em;
+     top: 0.5em;
+     z-index: 999;
+     color: rgba(255, 255, 255, 0.7);
+     cursor: pointer;
+     padding: 0 0.5em;
+     border: 1px solid rgba(255, 255, 255, 0.4);
+     border-radius: 4px;
+     -webkit-transition: all 0.3s ease;
+     -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
+     text-transform: uppercase;
+     font-size: 11px; }
+   
+   #reset:hover {
+     color: #fff;
+     border-color: #fff; }
+   
+   #reset:active {
+     -webkit-transform: scale(0.8);
+     -ms-transform: scale(0.8);
+     transform: scale(0.8); }
+   
+/*clander*/
+/*lectures-detalis*/
+
+.component-lectures-tiem li{
+  list-style: none;
+}
+.component-lectures-tiem li i{
+  color: #B87115;
+  font-size: 25px;
+}
+.btn-check:focus+.btn, .btn:focus{
+  color: var(--color-default);
+}
+.btn-link-add{
+  background-color: var(--color-primary);
+}
+.img-modal{
+  width: 128px;
+  height: auto;
+}
+.fa-star.selected {
+  color: #f8d05a;
+}
+.fa-star {
+  color: var(--color-p);
+  font-size: 20px;
+}
+.fa-star:hover {
+  color: var(--color-default);
+}
+.row-lect-form{
+  box-shadow: 0px 2px 8px 0px rgba(0, 12, 55, 0.1);   
+padding: 10px;
+margin: 10px;
+border-radius: 16px;
+}
+/*lectures-detalis*/
