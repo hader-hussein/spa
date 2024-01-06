@@ -66,4 +66,20 @@ $(function(){
 $(function(){
   $('#peopletr').multiSelect();
 });
-   
+$('.rating').on('click', '.ratings_stars', function () {
+  var star = $(this)
+  star.addClass('selected')
+  star.prevAll().addClass('selected')
+  star.nextAll().removeClass('selected')
+  $('#rating').val(star.data('rating'))
+});
+const currentabout = location.href; 
+const menuitemabout = document.querySelectorAll('.navbar-dashboard .nav-link');
+ const menulengthabout = menuitemabout.length
+for (let j = 0; j<menulengthabout; j++){
+ if(menuitemabout[j].href === currentabout) {
+  menuitemabout[j].className = "active" 
+    }
+}
+    $('.navbar-dashboard .nav-link').removeClass('active').removeAttr('aria-current');
+    $('a[href="' + location.pathname + '"]').closest('li').addClass('active').attr('aria-current', 'page'); 
