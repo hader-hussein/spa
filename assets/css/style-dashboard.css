@@ -80,9 +80,16 @@ background-color: var(--color-primary);
      position: absolute;
      border-bottom-left-radius: 16px;
      border-bottom-right-radius: 16px;
-     top:0px;
-     right: 0px;
+    
 
+}
+[dir="rtl"] .content-number-n{
+  top:0px;
+  right: 0px;
+}
+[dir="ltr"] .content-number-n{
+  top:0px;
+  left: 0px;
 }
 .compon-item{
      display: grid;
@@ -96,6 +103,7 @@ border-bottom: 0px;
      color: var(--color-h);
      font-size: 18px;
      font-weight: bold;
+     text-transform: capitalize;
 } 
 .component-tap .nav-tabs .nav-link:hover,
 .component-tap .nav-tabs .nav-link.active
@@ -321,4 +329,125 @@ padding: 10px;
 margin: 10px;
 border-radius: 16px;
 }
+.img-admins-das.w-80{
+  width: 80%;
+  margin: auto;
+}
 /*lectures-detalis*/
+/*chat*/
+.conversation {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row-gap: 80px;
+  margin: auto;
+  box-sizing: border-box;
+  padding:2%;
+
+}
+.conversation-items {
+  display: grid;
+  grid-row-gap: 10px;
+}
+.robot--response {
+  justify-self: start;
+  justify-content: start;
+}
+.user-message, .robot-message {
+  background-color: #FFDF80;
+  padding: 12px;
+  position: relative;
+  color: var(--color-p);
+  border: 3px solid var(--color-primary);
+  font-size: 16px;
+  font-weight: bold;
+}
+.robot-message {
+  background-color: #ffff;
+  color: var(--color-p);
+  display: flex;
+  align-items: center;
+  border: 3px solid var(--color-primary);
+}
+
+.span-tit-cok {
+  color: var(--color-p);
+  font-weight: bold;
+  font-size: 14px;
+}
+.user--speech {
+  justify-self: end;
+  justify-content: end;
+}
+.msger-send-btn{
+  border: 1px solid #ced4da;
+}
+.msger-send-btn i{
+  color: var(--color-primary);
+}
+@media (min-width:1700px) {
+  .component-content-tiem li,.navbar-dashboard .navbar-nav .nav-item .nav-link,
+  .component-tap .nav-tabs .nav-link 
+  {
+font-size: 1.40em;
+  }
+}
+@media (min-width:990px) and (max-width:1025px) {
+  .content-number-n {
+    padding: 20px 5px;
+}
+}
+@media (max-width:990px) {
+  .content-number-n {
+    padding: 5px 5px !important;
+  }
+  .col-text-disting {
+    font-size: 16px !important;
+  }
+  .content-calendar-day span,.content-calendar-day ul li {
+    font-size: 16px !important;
+  }
+  .tab-hadeer-s{
+    display: block !important;
+  }
+  .tab-hadeer-s span{
+    display: block !important;
+  }
+}
+@media (max-width:550px) {
+  .col-item-number p, .component-tap .nav-tabs .nav-link {
+    font-size: 14px !important;
+  }
+  .tab-hadeer-s{
+    display: flex !important;
+  }
+  .component-content-tiem li,.col-text-disting {
+font-size: 16px !important;
+  }
+  .compon-item {
+    justify-content: center;
+  }
+  .content-calendar-day{
+
+ padding: 8px;
+  }
+  .content-calendar-day span,.content-calendar-day ul li,.text-muted span {
+    font-size: 14px !important;
+  }
+  .modal-body{
+    padding: 2px;
+  }
+  [dir="ltr"] .component-content-tiem{
+    padding-left: 20px;
+  }
+}
+[dir="ltr"] .col-item-number p,[dir="ltr"] .span-item-text,[dir="ltr"] .btn-link{
+  font-size: 0.95rem!important;
+}
+[dir="ltr"] h6.col-text-disting{
+  padding-left: 46px;
+}
+[dir="ltr"] .component-content-tiem li {
+font-size: 14px;
+}
+
+/*chat*/
