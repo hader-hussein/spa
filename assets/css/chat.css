@@ -27,7 +27,7 @@ aside{
      border: 2px solid var(--color-background);
 }
 main{
-	width:900px;
+	width:546px;
 	height:600px;
 	display:inline-block;
 	font-size:15px;
@@ -181,7 +181,7 @@ main header h3{
      width: 0px;
 }
 #chat li{
-	padding:10px;
+	padding:10px 20px;
 }
 #chat h2,#chat h3{
 	display:inline-block;
@@ -198,20 +198,37 @@ main header h3{
 	padding:20px;
 	color:#fff;
 	line-height:25px;
-	max-width:90%;
+	/* max-width:90%; */
 	display:inline-block;
 	text-align:left;
 	border-radius:5px;
 }
+#chat .message{
+	display:inline-block;
+}
 #chat .me{
 	text-align:right;
+
     
+}
+[dir="ltr"] .me .chat-message-wrapper{
+	display: grid;
+	justify-content: right;
+	justify-items: end;
+}
+[dir="rtl"] .me .chat-message-wrapper{
+	display: grid;
+	justify-content: left;
+	justify-items: end;
 }
 .chat-message-text p{
      color: #fff;
 }
-#chat .me .entete {
+#chat .me .entete  {
      justify-content: right;
+}
+[dir="rtl"] #chat .me .entete  {
+     justify-content: left;
 }
 [dir="rtl"] #chat .me .message{
      text-align: right;
@@ -219,8 +236,14 @@ main header h3{
 #chat .you .message{
 	background-color:var(--color-primary);
 }
-#chat .me .message,.chat-message-text{
+#chat .me .message,#chat .me .chat-message-text{
 	background-color:#727272;
+}
+#chat .you .chat-message-text{
+	background-color:#ffdf80;
+}
+[dir="rtl"] #chat .you .chat-message-text{
+text-align: right;
 }
 #chat .triangle{
 	width: 0;
@@ -231,13 +254,16 @@ main header h3{
 #chat .you .triangle{
      border-color: transparent transparent #ffdf80 transparent;
     margin-left: 15px;
-		margin-left:15px;
+		margin-right:10px;
 }
+
 #chat .me .triangle{
 		border-color: transparent transparent #727272 transparent;
 		margin-left:95%;
 }
-
+[dir="rtl"] #chat .me .triangle{
+	margin-right:95%;
+}
 .chat-history-footer{
      background-color: #fff;
      padding: 0.575rem 0.5rem;
@@ -267,5 +293,10 @@ main header h3{
 @media (max-width: 991.98px) {
      main {
     width: 432px;
+     }
+}
+@media (min-width:1000px) and (max-width:1024px){
+     main {
+    width: 650px;
      }
 }
