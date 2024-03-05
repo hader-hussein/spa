@@ -214,14 +214,14 @@ display: flex;
 .form-check-input {
     height: 1.5em !important;
     width: 1.5em !important;
-    background-color: var(--bs-form-check-bg) !important;
-    background-image: var(--bs-form-check-bg-image) !important;
+    /* background-color: var(--bs-form-check-bg) !important;
+    background-image: var(--bs-form-check-bg-image) !important; */
     cursor: pointer;
 }
-.form-check-input:checked {
+/* .form-check-input:checked {
     background-color: var(--color-default) !important;
     border-color: var(--color-default) !important;
-}
+} */
 [dir="rtl"] .form-check .form-check-input {
     float: right !important;
     margin-left: 10px !important;
