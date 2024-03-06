@@ -222,280 +222,44 @@
                     <!--end-content-link-->
                     <div class="col-md-9">
                        <div class="content-lecture p-md-4 p-2 rounded-4 mb-3">
-                         <h4 class="text-center fw-bold fs-4">تاكيد الحجز</h4>
-                         <div class="row mx-0 row-cols-lg-2 row-cols-1 row-cols-md-2 mt-4 g-2">
-                              <div class="col d-flex">
-                                   <div class="shadow-sm rounded-2">
-                                        <div class="row mx-0 flex-wrap align-items-center p-md-3 p-2">
-                                             <div class="col-md-4 img-instructors">
-                                                  <img class="m-auto  w-100 h-100" src="./assets/img/Maher_Al_Mueaqly.png" alt="profile">
-               
-                                             </div>
-                                             <div class="col-md-8">
-                                                  <h6 class="fs-6 fw-medium title-instrucror">الشيخ</h6>
-                                                  <h5 class="fs-5 fw-bold"> ماهر المعيقلي</h5>
-                                                  <p class="mb-0">معلم قران كريم  </p>
-                                                  
-                                                  <div class="pt-2 course-reviews_one rating d-flex mx-0 flex-wrap">
-                                                       
-                                                       <div class=" text-muted px-2">
-                                                       <i class=" fas fa-star selected " data-rating="1"></i>
-                                                       <i class=" fas fa-star  selected" data-rating="2"></i>
-                                                       <i class=" fas fa-star selected " data-rating="3"></i>
-                                                       <i class=" fas fa-star" data-rating="4"></i>
-                                                       <i class=" fas fa-star" data-rating="5"></i>
-                                                       </div>
-                                                       <span>(4.2)</span>
-                                                  </div>
-                                             </div>
-                                             
-                                       </div>  
-                                   </div>
-                                  
+                         <h4 class="text-center fw-bold fs-4">  بيانات الطالب</h4>
+                         <form class="pt-4 row">
+                              <div class="mb-3 col-md-6">
+                                   <label for="exampleFormControlInput1" class="form-label fw-semibold">  الاسم الاول<span>*</span></label>
+                                   <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="الاسم الاول">
                               </div>
-               
-                              <div class="col d-flex">
-                                   <div class="shadow-sm rounded-2 h-100 w-100">
-                                        <div class="d-flex p-md-3 p-2">
-                                             <div class=" fw-semibold fs-4"> نوع الباقة</div>
-                                             <div class="img-Packages mx-2">
-                                                  <img class="img-type" src="./assets/img/1-img.jpg" alt="men">
-               
-                                             </div>
-                                        </div>
-                                   </div>
-                                   
-                                  
+                              <div class="mb-3 col-md-6">
+                                   <label for="example-name-lest" class="form-label fw-semibold"> الاسم الاخير<span>*</span></label>
+                                   <input type="text" class="form-control form-control-lg" id="example-name-lest" placeholder="الاسم الاخير">
                               </div>
-                         </div>
+                              <div class="mb-3 col-md-6">
+                                   <label for="example-namber-tel" class="form-label fw-semibold"> رقم الجوال<span>*</span></label>
+                                   <input type="tel" class="form-control form-control-lg" id="example-namber-tel" placeholder="رقم الجوال">
+                              </div>
+                              <div class="mb-3 col-md-6">
+                                   <label for="inputage" class="form-label fw-semibold"> العمر<span>*</span></label>
+                                   <input type="text" class="form-control form-control-lg" id="inputage" placeholder="  العمر">
+                              </div>
+                              <div class="mb-3 col-md-12">
+                                   <label for="example-select" class="form-label fw-semibold"> اختر الدولة<span>*</span></label>
+                                   <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                                        <option selected> اختر الدولة</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                              </div>
+                              
                          
-                         <form class=" row mx-0 pt-4">
-                           
-                              <!--clander-->
-                              <div class="component-clander mt-4">
-                                 
-                                   <div class="elegant-calencar d-md-flex">
-                                        <div class="wrap-header d-flex align-items-center">
-                                                       <p id="reset">reset</p>
-                                                       <div id="header" class="p-0">
-                                                       <div class="pre-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-left"></i></div>
-                                                       <div class="head-info">
-                                                            <div class="head-day"></div>
-                                                            <div class="head-month"></div>
-                                                       </div>
-                                                       <div class="next-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-right"></i></div>
-                                                       </div>
-                                        </div>
-                                        <div class="calendar-wrap table-clander">
-                                                  <table id="calendar">
-                                                  <thead>
-                                                       <tr>
-                                                            <th>Sun</th>
-                                                            <th>Mon</th>
-                                                            <th>Tue</th>
-                                                            <th>Wed</th>
-                                                            <th>Thu</th>
-                                                            <th>Fri</th>
-                                                            <th>Sat</th>
-                                                       </tr>
-                                                  </thead>
-                                                  <tbody>
-                                                  <tr>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  </tr>
-                                                  <tr>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  </tr>
-                                                  <tr>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  </tr>
-                                                  <tr>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  </tr>
-                                                  <tr>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  </tr>
-                                                  <tr>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  <td></td>
-                                                  </tr>
-                                                  </tbody>
-                                                  </table>
-                                        </div>
-                                   </div>
-                                  
-                              </div>
-                            <!--clander-->
-                              <div class="table-stedent table-responsive table-Lectures mt-4">
-                                   <label class="form-label fw-semibold">   مواعيد المحاضرات المختارة</label>
-     
-                                   <table class="table  caption-top table-bordered">
-                                        <thead>
-                                             <tr>
-                                                  <th scope="col"> المحاضره</th>
-                                                  <th scope="col">يوم</th>
-                                                  <th scope="col"> من</th>
-                                                  <th scope="col">  الى </th>
-                                                  
-          
-                                                </tr>
-                                        </thead>
-                                        <tbody>
-                                             <tr>
-                                                  <td>	
-                                                       <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">
-                                                             1
-                                                            </label>
-                                                          </div>
-                                                  </td>
-                                                  <td>3/5/2024</td>
-                                                  <td>0:9:30:00</td>
-                                                  <td>	10:00:00</td>
-                                                  
-                                                </tr>
-                                                <tr>
-                                                  <td>	
-                                                       <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">
-                                                             2
-                                                            </label>
-                                                          </div>
-                                                  </td>
-                                                  <td>3/5/2024</td>
-                                                  <td>0:9:30:00</td>
-                                                  <td>	10:00:00</td>
-                                                  
-                                                </tr>
-                                                <tr>
-                                                  <td>	
-                                                       <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">
-                                                             3
-                                                            </label>
-                                                          </div>
-                                                  </td>
-                                                  <td>3/5/2024</td>
-                                                  <td>0:9:30:00</td>
-                                                  <td>	10:00:00</td>
-                                                  
-                                                </tr>
-                                                <tr>
-                                                  <td>	
-                                                       <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">
-                                                             4
-                                                            </label>
-                                                          </div>
-                                                  </td>
-                                                  <td>3/5/2024</td>
-                                                  <td>0:9:30:00</td>
-                                                  <td>	10:00:00</td>
-                                                  
-                                                </tr>
-                                                <tr>
-                                                  <td>	
-                                                       <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">
-                                                            5
-                                                            </label>
-                                                          </div>
-                                                  </td>
-                                                  <td>3/5/2024</td>
-                                                  <td>0:9:30:00</td>
-                                                  <td>	10:00:00</td>
-                                                  
-                                                </tr>
-                                                <tr>
-                                                  <td>	
-                                                       <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">
-                                                            6
-                                                            </label>
-                                                          </div>
-                                                  </td>
-                                                  <td>3/5/2024</td>
-                                                  <td>0:9:30:00</td>
-                                                  <td>	10:00:00</td>
-                                                  
-                                                </tr>
-                                        </tbody>
-                                   </table>
-                              </div>
-                              <div class="table-stedent table-responsive mt-4">
-                                   <label class="form-label fw-semibold">   مواعيد المحاضرات المختارة</label>
-     
-                                   <table class="table  caption-top table-bordered">
-                                        <thead>
-                                             <tr>
-                                                  <th scope="col"> المحاضره</th>
-                                                  <th scope="col">يوم</th>
-                                                  <th scope="col"> من</th>
-                                                  <th scope="col">  الى </th>
-                                                  
-          
-                                                </tr>
-                                        </thead>
-                                        <tbody>
-                                             <tr>
-                                                  <td>	1</td>
-                                                  <td>3/5/2024</td>
-                                                  <td>0:9:30:00</td>
-                                                  <td>	10:00:00</td>
-                                                  
-                                                </tr>
-                                        </tbody>
-                                   </table>
-                              </div>
                               <div class="col-12">
-                                   <button type="submit" class=" btn  btn-start tutor-is-block">
-                                        تاكيد الحجز        
+                                   <button type="submit" class="w-100 btn  btn-start rounded-5">
+                                        تسجيل 	         
                                     </button>
                               </div>
+                              
                          </form>
                        </div>
-                       
+                      
                     </div>
                 </div>
           </div>
