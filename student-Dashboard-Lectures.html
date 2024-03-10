@@ -89,7 +89,7 @@
                        <img src="./assets/img/hader-login.png" class="img-index" alt="breadcrumb">
                         <div class="row mx-0">
                           <div class="col-12 col-xl-12 breadcrumb-title m-auto d-flex justify-content-center">
-                            <h2 class="text-dark">  ملف الطالب  </h2>
+                            <h2 class="text-dark"> المحاضرات </h2>
                           </div>
                        
                      </div>
@@ -217,231 +217,117 @@
                     <!--end-content-link-->
                     <div class="col-md-9">
                        <div class="content-lecture p-md-4 p-2 rounded-4 mb-3">
-                         <ul class="nav nav-tabs nav-tabs-student" id="myTab" role="tablist">
-                              <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">بياناتى</button>
-                              </li>
-                              <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">تعديل بيانتى</button>
-                              </li>
-                              <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">الباقة الحالية</button>
-                              </li>
-                              <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">الرصيد</button>
-                              </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                                   <div class=" p-md-4 p-2 rounded-4 mb-3">
-                                        <h4 class="text-center fw-bold fs-4">   بيانات الطالب </h4>
-                                        <form class="pt-4 row">
-                                             <div class="mb-3 col-md-6">
-                                                  <label for="exampleFormControlInput1" class="form-label fw-semibold">  الاسم</label>
-                                                  <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="محمد جمال على " disabled>
-                                             </div>
-                                             <div class="mb-3 col-md-6">
-                                                  <label for="example-email" class="form-label fw-semibold">  البريد الاكترونى </label>
-                                                  <input type="text" class="form-control form-control-lg" id="example-email" placeholder="ahmed@yahoo.com" disabled>
-                                             </div>
-                                             <div class="mb-3 col-md-6">
-                                                  <label for="example-namber-tel" class="form-label fw-semibold"> رقم الجوال</label>
-                                                  <input type="tel" class="form-control form-control-lg" id="example-namber-tel" placeholder=" 01004857564" disabled>
-                                             </div>
-                                             <div class="mb-3 col-md-6">
-                                                  <label for="inputage" class="form-label fw-semibold"> العمر</label>
-                                                  <input type="text" class="form-control form-control-lg" id="inputage" placeholder="  100" disabled>
-                                             </div>
-                                             <div class="mb-3 col-md-12">
-                                                  <label for="input-cit" class="form-label fw-semibold">  الدولة</label>
-                                                  <input type="email" class="form-control form-control-lg" id="input-cit" placeholder="   المملكة العربية السعودية" disabled>
-                                             </div>
-                                        
-                                        </form>
-                                      </div>
-                              </div>
-                              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                                   <div class=" p-md-4 p-2 rounded-4 mb-3">
-                                        <h4 class="text-center fw-bold fs-4">  تعديل بيانات الطالب </h4>
-                                        <form class="pt-4 row">
-                                             <div class="mb-3 col-md-6">
-                                                  <label for="exampleFormControlInput1" class="form-label fw-semibold">  الاسم الاول<span>*</span></label>
-                                                  <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="الاسم الاول">
-                                             </div>
-                                             <div class="mb-3 col-md-6">
-                                                  <label for="example-name-lest" class="form-label fw-semibold"> الاسم الاخير<span>*</span></label>
-                                                  <input type="text" class="form-control form-control-lg" id="example-name-lest" placeholder="الاسم الاخير">
-                                             </div>
-                                             <div class="mb-3 col-md-6">
-                                                  <label for="example-namber-tel" class="form-label fw-semibold"> رقم الجوال</label>
-                                                  <input type="tel" class="form-control form-control-lg" id="example-namber-tel" placeholder="رقم الجوال">
-                                             </div>
-                                             <div class="mb-3 col-md-6">
-                                                  <label for="inputage" class="form-label fw-semibold"> العمر</label>
-                                                  <input type="text" class="form-control form-control-lg" id="inputage" placeholder="  العمر">
-                                             </div>
-                                             <div class="mb-3 col-md-6">
-                                                  <label for="input-password" class="form-label fw-semibold">  ادخل الرقم السرى</label>
-                                                  <input type="password" class="form-control form-control-lg" id="input-password" placeholder="  البريد الاكترونى">
-                                             </div>
-                                             <div class="mb-3 col-md-6">
-                                                  <label for="input-password" class="form-label fw-semibold">  اعادة ادخال الرقم السرى</label>
-                                                  <input type="password" class="form-control form-control-lg" id="input-password" placeholder="  اعادة ادخال الرقم السرى  ">
-                                             </div>
-                                             <div class="mb-3 col-md-12">
-                                                  <label for="example-select" class="form-label fw-semibold"> اختر الدولة<span>*</span></label>
-                                                  <select class="form-select form-select-lg mb-3" aria-label="Large select example">
-                                                       <option selected=""> اختر الدولة</option>
-                                                       <option value="1">One</option>
-                                                       <option value="2">Two</option>
-                                                       <option value="3">Three</option>
-                                                     </select>
-                                             </div>
-                                             
-                                        
-                                             <div class="col-12">
-                                                  <button type="submit" class="w-100 btn  btn-start rounded-5">
-                                                       حفظ 	         
-                                                   </button>
-                                             </div>
-                                             
-                                        </form>
-                                      </div>
-                              </div>
-                              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-
-                                   <div class="content-lecture p-md-4 p-2 rounded-4 mb-3 mt-3">
-                                       <div class="row mx-0">
-                                          <div class="col col-12">
-                                             <div class="d-flex align-items-center">
-                                                  <img class="w-25" src="./assets/img/human-resources.png" alt="human">
-                                                  <div class="detiles-package mx-2">
-                                                     <h6 class="mb-2">الباقة الحالية</h6>
-                                                     <h5>الرجال والنساء3</h5>
-                                                     <ul class="component-content-tiem component-lectures-tiem">
-                                                       <li class="mb-2">
-                                                      
-               
-                                                          <li class="mb-2"> 
-                                                            <i class="fa fa-calendar fs-6" aria-hidden="true"></i>
-                                                                  المدة من
-                                                            <span>  6-3-2024 </span>
-                                                           </li>
-                                                  
-                                                          <li class="mb-2">  <i class="fa fa-calendar fs-6" aria-hidden="true"></i> المدة الى    :<span> 6-3-2024 </span></li>
-                                                     </ul>
-                                                  </div>
-                                             </div>
-                                          </div>
-                                          <div class="col col-12">
-                                             <div class="row mx-0 align-items-center ">
-                                                  <div class="col-button col-md-8">
-                                                       <button type="button" class="btn mx-2 btn-link-add px-2 w-100 py-2 rounded-5 fs-6 fw-bold mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                            عرض التقييم
-                                                          </button>
-                                                          <a href="student-Dashboard-Lectures.html"  class="btn mx-2  btn-link px-2 w-100 py-2 rounded-5 fs-6 fw-bold mt-4" >
-                                                            عرض المحاضرات                                               
-                                                          </a>
-                                                  </div>
-                                             
-                                            
-                                                  <div class="col-md-4 col-selery  text-center fw-bold fs-6">
-                                                       السعر بالريال
-                                                       <br>
-                                                       <span class="fw-semibold fs-4">
-                                                            500
-                                                       </span>
-                                                       
-                                                  </div>
-                                                  
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                              </div>
-                              <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-                                   <div class=" p-md-4 p-2 rounded-4 mb-3">
-                                        <h6 class="fs-3 fw-bold">الرصيد المتاح</h6>
-                                   <div class="row row-cols-md-3 row-cols-1 mx-0 component-balance pt-4">
-                                      <div class="col d-flex">
-                                        <div class="w-100 content-balance p-lg-3 p-2 rounded-3">
-                                             <h6 class="fs-4">الرصيد الحالي</h6>
-                                             <div class="d-flex justify-content-between flex-wrap align-items-center">
-                                                  
-                                                  <p class="mb-0 fs-5 fw-medium">$16.69</p>
-                                                  <img class="img-balance" src="./assets/img/img-dashboard/salary.png" alt="salary">
-                                             </div>
-               
-                                        </div>
-                                         
-                                      </div>
-                                      <div class="col d-flex">
-                                        <div class="w-100 content-balance p-lg-3 p-2 rounded-3">
-                                             <h6 class="fs-4"> اجمالي الدقايق</h6>
-                                             <div class="d-flex justify-content-between flex-wrap align-items-center">
-                                                  
-                                                  <p class="mb-0 fs-5 fw-medium">54355</p>
-                                                  <img class="img-balance" src="./assets/img/img-dashboard/5-minutes.png" alt="salary">
-                                             </div>
-                                             
-                                        </div>
-                                        
-                                     </div>
-                                     <div class="col d-flex">
-                                        <div class="w-100 content-balance p-lg-3 p-2 rounded-3">
-                                             <h6 class="fs-4">  الرصيد المستخدم</h6>
-                                             <div class="d-flex justify-content-between flex-wrap align-items-center">
-                                                  
-                                                  <p class="mb-0 fs-5 fw-medium"> رصيد باقات</p>
-                                                  <img class="img-balance" src="./assets/img/img-dashboard/savinge.png" alt="salary">
-                                             </div>
-                                             
-                                        </div>
+                         
+                           <div class="content-lecture p-md-4 p-2 rounded-4 mb-3 mt-3">
+                              <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                  <div class="d-flex align-items-center ">
+                                   <img src="./assets/img/img-dashboard/lecture.png" alt="lecture">
+                                   <div>
+                                        <h6 class="fs-5 fw-bold"> محاضرة1</h6>
+                                        <h5 class="pt-2">الحالة/ منتهية</h5>
+                                   </div>
                                    
-                                     </div>
-                                   </div>
-                                
-                                   </div>
-                              </div>
-                            </div>
-                            <div class="content-lecture p-md-4 p-2 rounded-4 mb-2 mt-2 bg-warning">
-                                 <h5> النقاط الخاصة بالطالب</h5>
-                                 <h4 class="text-center">
-                                   100 نقطة
-                                 </h4>
-                            </div>
-                            <div class="content-lecture mt-3 mb-3  rounded-4">
-                                <div class="d-flex justify-content-between p-md-4 p-2 align-items-center flex-wrap">
-                                   <div class="d-flex align-items-center">
-                                        <img class="w-25" src="./assets/img/productivity.png" alt="productivity">
-                                        <h6 class="fs-6 mx-2">
-                                             مستوى الطالب بالمحاضره والمهام
-     
-                                        </h6>
-                                   </div>
-                                
-                                   <div class="fs-3 fs-degree">
-                                        <span class="fw-bold">10</span>-9
-                                   </div>
-                                </div>
-                               
-                            </div>
-                            <div class="content-lecture mt-3 mb-3  rounded-4">
-                              <div class="d-flex justify-content-between p-md-4 p-2 align-items-center flex-wrap text-center">
-                                   <div class="d-flex align-items-center">
-                                        <img class="w-25" src="./assets/img/productivity.png" alt="productivity">
-
-                                        <h6 class="fs-6 mx-2">
-                                            مستوى الطالب فى الدورات
-                                        </h6>
-                                   </div>
                                   
-                                 <div class="fs-3 fs-degree">
-                                   <span class="fw-bold">10</span>-9
-                                 </div>
+                                  </div>  
+                                  <div>
+                                   <button type="button" class="btn mx-2 btn-link-add px-2 w-100 py-2 rounded-5 fs-6 fw-bold mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        تفاصيل المحاضرة
+                                      </button>
+                                  </div>
+                                  <div>
+                                   <ul class="component-content-tiem component-lectures-tiem">
+                                        <li class="mb-2"> 
+                                             <i class="fa fa-calendar fs-6" aria-hidden="true"></i>
+                                                 التاريخ
+                                             <span>  6-3-2024 </span>
+                                        </li>
+                                        <li class="mb-2"> 
+                                             <i class="fa fa-clock fs-6" aria-hidden="true"></i>
+                                                   المدة من
+                                             <span>  02:30 pm </span>
+                                        </li>
+                                        <li class="mb-2">  <i class="fa fa-clock fs-6" aria-hidden="true"></i> المدة الى    :<span> 02:30pm</span></li>
+                                      
+                                   </ul>
+                                  </div>
                               </div>
-                             
-                          </div>
+                          
+                            
+                            </div>
+                            <!--item-->
+                            <div class="content-lecture p-md-4 p-2 rounded-4 mb-3 mt-3">
+                              <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                  <div class="d-flex align-items-center ">
+                                   <img src="./assets/img/img-dashboard/lecture.png" alt="lecture">
+                                   <div>
+                                        <h6 class="fs-5 fw-bold"> محاضرة1</h6>
+                                        <h5 class="pt-2">الحالة/ منتهية</h5>
+                                   </div>
+                                   
+                                  
+                                  </div>  
+                                  <div>
+                                   <button type="button" class="btn mx-2 btn-link-add px-2 w-100 py-2 rounded-5 fs-6 fw-bold mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        تفاصيل المحاضرة
+                                      </button>
+                                  </div>
+                                  <div>
+                                   <ul class="component-content-tiem component-lectures-tiem">
+                                        <li class="mb-2"> 
+                                             <i class="fa fa-calendar fs-6" aria-hidden="true"></i>
+                                                 التاريخ
+                                             <span>  6-3-2024 </span>
+                                        </li>
+                                        <li class="mb-2"> 
+                                             <i class="fa fa-clock fs-6" aria-hidden="true"></i>
+                                                   المدة من
+                                             <span>  02:30 pm </span>
+                                        </li>
+                                        <li class="mb-2">  <i class="fa fa-clock fs-6" aria-hidden="true"></i> المدة الى    :<span> 02:30pm</span></li>
+                                      
+                                   </ul>
+                                  </div>
+                              </div>
+                          
+                            
+                            </div>
+                            <!--item-->
+                            <div class="content-lecture p-md-4 p-2 rounded-4 mb-3 mt-3">
+                              <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                  <div class="d-flex align-items-center ">
+                                   <img src="./assets/img/img-dashboard/lecture.png" alt="lecture">
+                                   <div>
+                                        <h6 class="fs-5 fw-bold"> محاضرة1</h6>
+                                        <h5 class="pt-2">الحالة/ منتهية</h5>
+                                   </div>
+                                   
+                                  
+                                  </div>  
+                                  <div>
+                                   <button type="button" class="btn mx-2 btn-link-add px-2 w-100 py-2 rounded-5 fs-6 fw-bold mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        تفاصيل المحاضرة
+                                      </button>
+                                  </div>
+                                  <div>
+                                   <ul class="component-content-tiem component-lectures-tiem">
+                                        <li class="mb-2"> 
+                                             <i class="fa fa-calendar fs-6" aria-hidden="true"></i>
+                                                 التاريخ
+                                             <span>  6-3-2024 </span>
+                                        </li>
+                                        <li class="mb-2"> 
+                                             <i class="fa fa-clock fs-6" aria-hidden="true"></i>
+                                                   المدة من
+                                             <span>  02:30 pm </span>
+                                        </li>
+                                        <li class="mb-2">  <i class="fa fa-clock fs-6" aria-hidden="true"></i> المدة الى    :<span> 02:30pm</span></li>
+                                      
+                                   </ul>
+                                  </div>
+                              </div>
+                          
+                            
+                            </div>
                        </div>
                        
                     </div>
@@ -450,18 +336,50 @@
            
        </section>
       <!--content-dashboard-->
-        <!-- Modal -Student evaluation-->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <!-- Modal -Student evaluation-->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
                <div class="modal-content">
                     <div class="modal-header">
                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                           <h6 class="text-center fs-5">تقييم الطالب </h6>  
-                           <p>تقييم الطالب خلال الباقة</p>                    
+                         <div class="row mx-0 row-cols-md-2   row-cols-1">
+                              <div class="col mb-2 mb-sm-0">
+                                   <img class="w-15" src="./assets/img/human-resources.png" alt="human">
+                                   <h6 class="mt-2">باقة الرجال والنساء</h6>
+                              </div>
+                              <div class="col d-flex mx-0 flex-wrap align-items-center">
+                                   <div class="img-instructors">
+                                        <img class="m-auto img-profile-m rounded-circle" src="./assets/img/Maher_Al_Mueaqly.png" alt="profile">
+     
+                                   </div>
+                                   <div class="px-lg-2 px-md-2 px-1">
+                                        <h6 class="fs-6 fw-medium title-instrucror">الشيخ</h6>
+                                        <h5 class="fs-4 fw-bold"> ماهر المعيقلي</h5>
+                                       
+                                        
+                                        <div class="pt-2 course-reviews_one rating d-flex mx-0 flex-wrap">
+                                             
+                                             <div class=" text-muted px-2">
+                                             <i class=" fas fa-star selected " data-rating="1"></i>
+                                             <i class=" fas fa-star selected " data-rating="2"></i>
+                                             <i class=" fas fa-star selected " data-rating="3"></i>
+                                             <i class=" fas fa-star" data-rating="4"></i>
+                                             <i class=" fas fa-star" data-rating="5"></i>
+                                             </div>
+                                             <span>(4.2)</span>
+                                        </div>
+                                   </div>
+                                   
+                              </div> 
+                         </div>
+                        
+                         <hr>
+                           <h6 class="text-center fw-bold fs-5">تقييم المعلم  للطالب </h6>  
+                                         
                          <div class="content-lecture mt-3 mb-3  rounded-4">
-                              <div class="d-flex justify-content-between p-md-4 p-2 align-items-center flex-wrap">
+                              <div class="d-flex justify-content-between p-md-3 p-2 align-items-center flex-wrap">
                                  <div class="d-flex align-items-center">
                                       <img class="w-15" src="./assets/img/productivity.png" alt="productivity">
                                       <h6 class="fs-6 mx-2">
@@ -478,7 +396,7 @@
                           </div> 
                            <!--item-->
                            <div class="content-lecture mt-3 mb-3  rounded-4">
-                              <div class="d-flex justify-content-between p-md-4 p-2 align-items-center flex-wrap">
+                              <div class="d-flex justify-content-between p-md-3 p-2 align-items-center flex-wrap">
                                  <div class="d-flex align-items-center">
                                       <img class="w-15" src="./assets/img/productivity.png" alt="productivity">
                                       <h6 class="fs-6 mx-2">
@@ -495,7 +413,7 @@
                           </div> 
                           <!--item-->
                           <div class="content-lecture mt-3 mb-3  rounded-4">
-                              <div class="d-flex justify-content-between p-md-4 p-2 align-items-center flex-wrap">
+                              <div class="d-flex justify-content-between p-md-3 p-2 align-items-center flex-wrap">
                                  <div class="d-flex align-items-center">
                                       <img class="w-15" src="./assets/img/productivity.png" alt="productivity">
                                       <h6 class="fs-6 mx-2">
@@ -510,6 +428,12 @@
                               </div>
                              
                           </div> 
+                          <hr>
+                          <h6 class="fs-5 fw-bold text-center"> الواجبات</h6>
+                          <ul class="component-content-tiem mt-4 mx-4">
+                              <li class="mb-2">  حفظ سورة البقرة  </li>
+                              <li class="mb-2">  تفسير سورة الفيل  </li>
+                         </ul>
                     </div>
                  
                </div>

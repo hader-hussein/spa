@@ -315,3 +315,38 @@ text-align: right;
     
     height: 150px;
 }
+.card-courses{
+	width: 100%;
+}
+/***student****/
+.nav-tabs-student{
+	border-bottom:0px
+}
+.nav-tabs-student button{
+	color: var(--color-secondary);
+	font-size: 18px;
+}
+.nav-tabs-student .nav-link.active {
+color: var(--color-default);
+font-weight: bold;
+border: 0px;
+border-bottom:2px solid var(--color-default) ;
+}
+.nav-tabs-student .nav-link:focus,.nav-tabs-student .nav-link:hover {
+	color: var(--color-primary);
+	border: 0ox;
+ }
+ .w-15{
+	width: 50px;
+ }
+ .img-profile-m{
+	width: 100px;
+	height: 100px;
+ }
+ @media (max-width:550px) {
+	.fs-degree{
+		width:100%;
+		text-align: center;
+	}
+	
+ }
