@@ -17,6 +17,8 @@
      <link href="./assets/font/font-awesome/css/all.css" rel="stylesheet">
      <link href="./assets/css/style.css" rel="stylesheet">
      <link href="./assets/css/style-dashboard.css" rel="stylesheet">
+     <link href="./assets/css/chat.css" rel="stylesheet">
+
      <link href="./assets/css/style-en.css" rel="stylesheet">
 </head>
 <body>
@@ -105,7 +107,22 @@
                     <!--content-link-->
                     <div class="col-md-3 content-teacher-link rounded-4 pt-2">
                        <div class="img-name-dashboard rounded-4 text-center p-lg-4 p-md-3 p-2">
-                            <img class="img-student-profile rounded-circle" src="./assets/img/img-dashboard/teacher.svg" alt="profile">
+                         <form>
+                              <div class="img-porfoil mb-3">
+                                   <div class="avatar-edit">
+                                     <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                     <label for="imageUpload">
+                                      <img src="./assets/img/pen.png" style="width: 25px;">
+     
+                                     </label>
+                                   </div>
+                                   <div class="avatar-preview">
+                                     <div id="imagePreview" class="img-student-profile rounded-circle"  style="background-image: url(./assets/img/img-dashboard/teacher.svg);">
+                                     </div>
+                                   
+                                   </div>
+                                   </div>
+                           </form>
                             <h6 class="fw-semibold fs-4 pt-2 text-capitalize" maxlength="20"> mohamed jamal
 
                               kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
@@ -389,5 +406,22 @@
        <script src="./assets/js/bootstrap.bundle.min.js"></script>
        <script src="./assets/js/loade.js"></script>
        <script src="./assets/js/main.js"></script>
+       <script>
+          /**********profil-img********** */
+        function readURL(input) {
+          if (input.files && input.files[0]) {
+              var reader = new FileReader();
+              reader.onload = function(e) {
+                  $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+                  $('#imagePreview').hide();
+                  $('#imagePreview').fadeIn(650);
+              }
+              reader.readAsDataURL(input.files[0]);
+          }
+        }
+        $("#imageUpload").change(function() {
+          readURL(this);
+        });
+        </script>
 </body>
 </html>

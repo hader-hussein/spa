@@ -34,7 +34,7 @@
             days[daysLen].addEventListener('click', function(){that.clickDay(this); });
         }
     };
-console.log(reset)
+
     Calendar.prototype.drawHeader = function(e) {
         var headDay = document.getElementsByClassName('head-day'),
             headMonth = document.getElementsByClassName('head-month');
@@ -167,3 +167,4 @@ console.log(reset)
 }, false);
 
 })(jQuery);
+/*clander-student*/

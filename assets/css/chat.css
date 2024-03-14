@@ -79,7 +79,7 @@ aside ul{
 	margin:0;
 	list-style-type:none;
 	overflow-y:scroll;
-	height:500px;
+	height:450px;
 
 }
 aside ul::-webkit-scrollbar {
@@ -292,13 +292,29 @@ text-align: right;
 }
 @media (max-width: 991.98px) {
      main {
-    width: 432px;
+    width: 390px;
      }
 }
 @media (min-width:1000px) and (max-width:1024px){
      main {
-    width: 650px;
+    width: 360px;
      }
+}
+@media  (max-width: 1100px)  {
+	aside {
+		width: 100%;
+		height: max-content
+	}
+	.chat-contact-list{
+		display: flex;
+		height: max-content;
+	}
+	main {
+		width: 100%;
+	}
+	.time{
+		display: none;
+	}
 }
 /****student-dashboard-booking**/
 
@@ -349,4 +365,49 @@ border-bottom:2px solid var(--color-default) ;
 		text-align: center;
 	}
 	
+ }
+ /**/
+ .img-porfoil {
+	position: relative;
+ }
+ .avatar-edit {
+	position: absolute;
+	z-index: 700;
+	bottom: 2px;
+ }
+ .avatar-edit {
+	left: 54%;
+ }
+ .avatar-edit input {
+	display: none;
+ }
+ .avatar-edit input + label {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	margin-bottom: 0;
+	border-radius: 100%;
+	background: #FFFFFF;
+	border: 1px solid transparent;
+	box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 12%);
+	cursor: pointer;
+	font-weight: normal;
+	transition: all 0.2s ease-in-out;
+ }
+ .avatar-preview {
+	width: 130px;
+	height: 130px;
+	position: relative;
+	border-radius: 100%;
+	border: 6px solid var(--theme-color);
+	box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 10%);
+	margin: 0 auto;
+	z-index: 20;
+ }
+ .avatar-preview > div {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
  }

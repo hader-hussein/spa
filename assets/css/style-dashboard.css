@@ -195,10 +195,10 @@ padding: 10px 15px;
      background: #fff;
      padding: 40px 20px 20px 20px; }
    
-   #calendar {
+   #calendar , #calendart{
      width: 100%; }
    
-   #calendar tr {
+   #calendar tr, #calendart tr {
      height: 3em; }
    
    .table-clander thead tr {
@@ -267,7 +267,7 @@ padding: 10px 15px;
      #disabled:hover:after {
        background: transparent; }
    
-   #reset {
+   #reset, #resett {
      display: block;
      position: absolute;
      right: 0.5em;
@@ -284,11 +284,11 @@ padding: 10px 15px;
      text-transform: uppercase;
      font-size: 11px; }
    
-   #reset:hover {
+   #reset:hover, #resett:hover {
      color: #fff;
      border-color: #fff; }
    
-   #reset:active {
+   #reset:active,#resett:active {
      -webkit-transform: scale(0.8);
      -ms-transform: scale(0.8);
      transform: scale(0.8); }
