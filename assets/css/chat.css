@@ -82,9 +82,7 @@ aside ul{
 	height:450px;
 
 }
-aside ul::-webkit-scrollbar {
-        width: 0px;
-    }  
+
 aside li{
 	padding:10px 0;
 }
@@ -177,9 +175,7 @@ main header h3{
 	border-top:2px solid #fff;
 	border-bottom:2px solid #fff;
 }
-#chat::-webkit-scrollbar {
-     width: 0px;
-}
+
 #chat li{
 	padding:10px 20px;
 }
