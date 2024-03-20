@@ -20,6 +20,41 @@
      <link href="./assets/css/style-student.css" rel="stylesheet">
      <link href="./assets/css/chat.css" rel="stylesheet">
      <link href="./assets/css/style-en.css" rel="stylesheet">
+     <style>
+          .nav-d .dropdown-menu{
+           
+               --bs-dropdown-min-width: 25rem;
+               min-width: 22rem;
+    overflow: scroll;
+
+          }
+          .nav-d .dropdown-menu::-webkit-scrollbar{
+               width: 0px;
+          }
+          [dir=rtl] .nav-d .dropdown-menu{
+    left: 0;
+    right: auto;
+}
+[dir=ltr] .nav-d .dropdown-menu{
+    right: 0;
+    left: auto;
+}
+          .dropdown-notifications-list{
+    max-height: 24.08rem;
+} 
+.avatar {
+    position: relative;
+    width: 2.375rem;
+    height: 2.375rem;
+    cursor: pointer;
+}
+[dir=rtl]  .nav-d .me-3 {
+    margin-left: 1rem !important;
+}
+.dropdown-notifications-actions i{
+     color: red;
+}
+     </style>
 </head>
 <body>
       <!-------------------------start-loading-pag------------------------->
@@ -71,6 +106,112 @@
                     <li class="nav-item">
                       <a class="nav-link" href="login.html">  تسجيل الدخول</a>
                     </li>
+                    <li class="nav-item dropdown nav-login-lang nav-d">
+                         <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa-solid fa-bell"></i>
+                           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                              99+
+                           </span>
+                         </a>
+                         <ul class="dropdown-menu">
+                              <li class="dropdown-menu-header border-bottom">
+                                   <div class="dropdown-header d-flex align-items-center justify-content-between py-3">
+                                     <h5 class="text-body mb-0 ">الاشعارات</h5>
+                                     <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Mark all as read" data-bs-original-title="Mark all as read"><i class="fa-regular fa-envelope"></i></a>
+                                   </div>
+                              </li>
+                             <li class="dropdown-notifications-list scrollable-container">
+                                <ul class="list-group list-group-flush">
+                                   <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                        <div class="d-flex">
+                                          <div class="flex-shrink-0 me-3">
+                                            <div class="avatar">
+                                              <img src="./assets/img/profile2.jpg" alt="" class="h-auto  rounded-circle">
+                                            </div>
+                                          </div>
+                                          <div class="flex-grow-1">
+                                            <h6 class="mb-1">Congratulation Lettie 🎉</h6>
+                                            <p class="mb-0">Won the monthly best seller gold badge</p>
+                                            <small class="text-muted">1h ago</small>
+                                          </div>
+                                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><i class="fa-solid fa-trash "></i></a>
+                                          </div>
+                                        </div>
+                                   </li>
+                                   <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                        <div class="d-flex">
+                                          <div class="flex-shrink-0 me-3">
+                                            <div class="avatar">
+                                              <img src="./assets/img/profile2.jpg" alt="" class="h-auto  rounded-circle">
+                                            </div>
+                                          </div>
+                                          <div class="flex-grow-1">
+                                            <h6 class="mb-1">Congratulation Lettie 🎉</h6>
+                                            <p class="mb-0">Won the monthly best seller gold badge</p>
+                                            <small class="text-muted">1h ago</small>
+                                          </div>
+                                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><i class="fa-solid fa-trash "></i></a>
+                                          </div>
+                                        </div>
+                                   </li>
+                                   <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                        <div class="d-flex">
+                                          <div class="flex-shrink-0 me-3">
+                                            <div class="avatar">
+                                              <img src="./assets/img/profile2.jpg" alt="" class="h-auto  rounded-circle">
+                                            </div>
+                                          </div>
+                                          <div class="flex-grow-1">
+                                            <h6 class="mb-1">Congratulation Lettie 🎉</h6>
+                                            <p class="mb-0">Won the monthly best seller gold badge</p>
+                                            <small class="text-muted">1h ago</small>
+                                          </div>
+                                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><i class="fa-solid fa-trash "></i></a>
+                                          </div>
+                                        </div>
+                                   </li>
+                                   <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                        <div class="d-flex">
+                                          <div class="flex-shrink-0 me-3">
+                                            <div class="avatar">
+                                              <img src="./assets/img/profile2.jpg" alt="" class="h-auto  rounded-circle">
+                                            </div>
+                                          </div>
+                                          <div class="flex-grow-1">
+                                            <h6 class="mb-1">Congratulation Lettie 🎉</h6>
+                                            <p class="mb-0">Won the monthly best seller gold badge</p>
+                                            <small class="text-muted">1h ago</small>
+                                          </div>
+                                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><i class="fa-solid fa-trash "></i></a>
+                                          </div>
+                                        </div>
+                                   </li>
+                                   <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                        <div class="d-flex">
+                                          <div class="flex-shrink-0 me-3">
+                                            <div class="avatar">
+                                              <img src="./assets/img/profile2.jpg" alt="" class="h-auto  rounded-circle">
+                                            </div>
+                                          </div>
+                                          <div class="flex-grow-1">
+                                            <h6 class="mb-1">Congratulation Lettie 🎉</h6>
+                                            <p class="mb-0">Won the monthly best seller gold badge</p>
+                                            <small class="text-muted">1h ago</small>
+                                          </div>
+                                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><i class="fa-solid fa-trash "></i></a>
+                                          </div>
+                                        </div>
+                                   </li>
+                                </ul>
+                             </li>
+                           
+                         </ul>
+                       </li>
                     <li class="nav-item nav-login-lang">
                               <a class="nav-link" href="#"> en</a>
                     </li>
