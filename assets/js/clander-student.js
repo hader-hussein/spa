@@ -1,3 +1,6 @@
+(function($) {
+
+	"use strict";
 const header = document.querySelector(".calendar h3");
 const dates = document.querySelector(".dates");
 const navs = document.querySelectorAll("#prev, #next");
@@ -55,11 +58,11 @@ function getWeekdayNum(e, t, n) {
 
   let datesHtml = "";
 
-//   for (let i = start; i > 0; i--) {
+  // for (let i = start; i > 0; i--) {
     
-//     datesHtml += `<li class="inactive-disple">${endDatePrev - i + 1}</li>`;
+  //   datesHtml += `<li class="inactive-disple">${endDatePrev - i + 1}</li>`;
   
-//   }
+  // }
   for (let i = 1; i <= endDate; i++) {
    
     // let className =
@@ -121,3 +124,4 @@ navs.forEach((nav) => {
 });
 
 renderCalendar();
+})(jQuery);
