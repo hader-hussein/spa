@@ -325,7 +325,7 @@ border: 1px solid var(--color-default);
   }
   @media (max-width:1024px) {
     .calendar {
-        max-width: 100%;
+        max-width: 100% !important;
     }
     .calendar .week{
         display: none !important;
@@ -333,7 +333,7 @@ border: 1px solid var(--color-default);
   }
   @media (max-width:550px) {
     .calendar {
-        max-width: 279px;
+        max-width: 350px !important;
     }
     .calendar .week{
         display: none !important;
@@ -364,9 +364,12 @@ border: 1px solid var(--color-default);
   .calendar .week{
     display: grid;
     position: absolute;
-    right: -29%;
+    right: -23%;
     text-align: right;
     justify-content: right;
+    width: max-content;
+    background-color: #ffdf80;
+    padding: 10px;
   }
   .calendar ul li {
     width: calc(100% / 7);
@@ -381,6 +384,7 @@ border: 1px solid var(--color-default);
     z-index: 2;
     font-size: 18px;
     font-weight: bold;
+    color: #fff;
   }
   .week-component{
     display: flex;

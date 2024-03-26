@@ -1217,3 +1217,6 @@ box-shadow: 0px 0px 0px transparent;
     /* white-space: nowrap; */
     text-overflow: ellipsis;
 }
+.select{
+    background-color: #805020;
+}
