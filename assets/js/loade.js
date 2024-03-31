@@ -83,3 +83,20 @@ for (let j = 0; j<menulengthabout; j++){
 }
     $('.navbar-dashboard .nav-link').removeClass('active').removeAttr('aria-current');
     $('a[href="' + location.pathname + '"]').closest('li').addClass('active').attr('aria-current', 'page'); 
+    ///
+    const container = document.getElementById("chat");
+const snap = document.getElementById("snap");
+
+// Scroll the view to the bottom once initially
+container.scrollTop = container.scrollHeight;
+
+container.addEventListener("scroll", (event) => {
+  const target = event.currentTarget;
+  const scroll = target.scrollTop;
+  const maxScroll = target.scrollHeight - target.clientHeight;
+  const threshold = 50; // px
+  isScrollBottomedOut = maxScroll - scroll < threshold;
+  // If the user scrolls up more than the threshold, disable snapping
+  // If the user scrolls down again, reenable snapping
+  snap.style.display = isScrollBottomedOut ? "block" : "none";
+});

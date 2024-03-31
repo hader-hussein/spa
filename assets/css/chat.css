@@ -174,8 +174,18 @@ main header h3{
 	height:443px;
 	border-top:2px solid #fff;
 	border-bottom:2px solid #fff;
+	overflow-x: hidden;
+;
+	-webkit-overflow-scrolling: touch;
+	-ms-scroll-chaining: none;
+	overscroll-behavior: contain;
+	-ms-scroll-snap-type: y proximity;
+	scroll-snap-type: y proximity;
+ 
 }
-
+#snap {
+	scroll-snap-align: end;
+   }
 #chat li{
 	padding:10px 20px;
 }
@@ -286,6 +296,18 @@ text-align: right;
 .chat-contact-list li.active {
     background-color: var(--color-default);
 }
+.message-image {
+	display: block;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 5px;
+	margin-left: 10px;
+ }
+ .chat-text{
+	background-color: #727272;
+
+ }
 @media (max-width: 991.98px) {
      main {
     width: 390px;
