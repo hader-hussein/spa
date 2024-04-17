@@ -17,9 +17,45 @@
      <link href="./assets/font/font-awesome/css/all.css" rel="stylesheet">
      <link href="./assets/css/style.css" rel="stylesheet">
      <link href="./assets/css/style-dashboard.css" rel="stylesheet">
-     <link href="./assets/css/chat.css" rel="stylesheet">
      <link href="./assets/css/style-student.css" rel="stylesheet">
+     <link href="./assets/css/chat.css" rel="stylesheet">
      <link href="./assets/css/style-en.css" rel="stylesheet">
+     <!--20-3-2024-->
+     <style>
+          .nav-d .dropdown-menu{
+           
+               --bs-dropdown-min-width: 25rem;
+               min-width: 22rem;
+    overflow: scroll;
+
+          }
+          .nav-d .dropdown-menu::-webkit-scrollbar{
+               width: 0px;
+          }
+          [dir=rtl] .nav-d .dropdown-menu{
+    left: 0;
+    right: auto;
+}
+[dir=ltr] .nav-d .dropdown-menu{
+    right: 0;
+    left: auto;
+}
+          .dropdown-notifications-list{
+    max-height: 24.08rem;
+} 
+.avatar {
+    position: relative;
+    width: 2.375rem;
+    height: 2.375rem;
+    cursor: pointer;
+}
+[dir=rtl]  .nav-d .me-3 {
+    margin-left: 1rem !important;
+}
+.dropdown-notifications-actions i{
+     color: red;
+}
+     </style>
 </head>
 <body>
       <!-------------------------start-loading-pag------------------------->
@@ -71,6 +107,113 @@
                     <li class="nav-item">
                       <a class="nav-link" href="login.html">  تسجيل الدخول</a>
                     </li>
+                    <!--20-3-2024-->
+                    <li class="nav-item dropdown nav-login-lang nav-d">
+                         <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa-solid fa-bell"></i>
+                           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                              99+
+                           </span>
+                         </a>
+                         <ul class="dropdown-menu">
+                              <li class="dropdown-menu-header border-bottom">
+                                   <div class="dropdown-header d-flex align-items-center justify-content-between py-3">
+                                     <h5 class="text-body mb-0 ">الاشعارات</h5>
+                                     <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Mark all as read" data-bs-original-title="Mark all as read"><i class="fa-regular fa-envelope"></i></a>
+                                   </div>
+                              </li>
+                             <li class="dropdown-notifications-list scrollable-container">
+                                <ul class="list-group list-group-flush">
+                                   <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                        <div class="d-flex">
+                                          <div class="flex-shrink-0 me-3">
+                                            <div class="avatar">
+                                              <img src="./assets/img/profile2.jpg" alt="" class="h-auto  rounded-circle">
+                                            </div>
+                                          </div>
+                                          <div class="flex-grow-1">
+                                            <h6 class="mb-1">Congratulation Lettie 🎉</h6>
+                                            <p class="mb-0">Won the monthly best seller gold badge</p>
+                                            <small class="text-muted">1h ago</small>
+                                          </div>
+                                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><i class="fa-solid fa-trash "></i></a>
+                                          </div>
+                                        </div>
+                                   </li>
+                                   <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                        <div class="d-flex">
+                                          <div class="flex-shrink-0 me-3">
+                                            <div class="avatar">
+                                              <img src="./assets/img/profile2.jpg" alt="" class="h-auto  rounded-circle">
+                                            </div>
+                                          </div>
+                                          <div class="flex-grow-1">
+                                            <h6 class="mb-1">Congratulation Lettie 🎉</h6>
+                                            <p class="mb-0">Won the monthly best seller gold badge</p>
+                                            <small class="text-muted">1h ago</small>
+                                          </div>
+                                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><i class="fa-solid fa-trash "></i></a>
+                                          </div>
+                                        </div>
+                                   </li>
+                                   <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                        <div class="d-flex">
+                                          <div class="flex-shrink-0 me-3">
+                                            <div class="avatar">
+                                              <img src="./assets/img/profile2.jpg" alt="" class="h-auto  rounded-circle">
+                                            </div>
+                                          </div>
+                                          <div class="flex-grow-1">
+                                            <h6 class="mb-1">Congratulation Lettie 🎉</h6>
+                                            <p class="mb-0">Won the monthly best seller gold badge</p>
+                                            <small class="text-muted">1h ago</small>
+                                          </div>
+                                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><i class="fa-solid fa-trash "></i></a>
+                                          </div>
+                                        </div>
+                                   </li>
+                                   <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                        <div class="d-flex">
+                                          <div class="flex-shrink-0 me-3">
+                                            <div class="avatar">
+                                              <img src="./assets/img/profile2.jpg" alt="" class="h-auto  rounded-circle">
+                                            </div>
+                                          </div>
+                                          <div class="flex-grow-1">
+                                            <h6 class="mb-1">Congratulation Lettie 🎉</h6>
+                                            <p class="mb-0">Won the monthly best seller gold badge</p>
+                                            <small class="text-muted">1h ago</small>
+                                          </div>
+                                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><i class="fa-solid fa-trash "></i></a>
+                                          </div>
+                                        </div>
+                                   </li>
+                                   <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                        <div class="d-flex">
+                                          <div class="flex-shrink-0 me-3">
+                                            <div class="avatar">
+                                              <img src="./assets/img/profile2.jpg" alt="" class="h-auto  rounded-circle">
+                                            </div>
+                                          </div>
+                                          <div class="flex-grow-1">
+                                            <h6 class="mb-1">Congratulation Lettie 🎉</h6>
+                                            <p class="mb-0">Won the monthly best seller gold badge</p>
+                                            <small class="text-muted">1h ago</small>
+                                          </div>
+                                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                                            <a href="javascript:void(0)" class="dropdown-notifications-archive"><i class="fa-solid fa-trash "></i></a>
+                                          </div>
+                                        </div>
+                                   </li>
+                                </ul>
+                             </li>
+                           
+                         </ul>
+                       </li>
                     <li class="nav-item nav-login-lang">
                               <a class="nav-link" href="#"> en</a>
                     </li>
@@ -89,7 +232,7 @@
                        <img src="./assets/img/hader-login.png" class="img-index" alt="breadcrumb">
                         <div class="row mx-0">
                           <div class="col-12 col-xl-12 breadcrumb-title m-auto d-flex justify-content-center">
-                            <h2 class="text-dark">  الواجب </h2>
+                            <h2 class="text-dark">  الرئيسيه </h2>
                           </div>
                        
                      </div>
@@ -107,7 +250,22 @@
                     <!--content-link-->
                     <div class="col-md-3 content-teacher-link rounded-4 pt-2">
                        <div class="img-name-dashboard rounded-4 text-center p-lg-4 p-md-3 p-2">
-                            <img class="img-student-profile rounded-circle" src="./assets/img/img-dashboard/teacher.svg" alt="profile">
+                           <form>
+                              <div class="img-porfoil mb-3">
+                                   <div class="avatar-edit">
+                                     <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                     <label for="imageUpload">
+                                      <img src="./assets/img/pen.png" style="width: 25px;">
+     
+                                     </label>
+                                   </div>
+                                   <div class="avatar-preview">
+                                     <div id="imagePreview" class="img-student-profile rounded-circle"  style="background-image: url(./assets/img/img-dashboard/teacher.svg);">
+                                     </div>
+                                   
+                                   </div>
+                                   </div>
+                           </form>
                             <h6 class="fw-semibold fs-4 pt-2 text-capitalize"> mohamed jamal</h6>
                        </div>
                        <!--nav-dashboard-->
@@ -133,7 +291,7 @@
                                              </a>
                                    </li>
                                    <li class="nav-item">
-                                   <a class="nav-link active" aria-current="page" href="student-Dashboard.html">
+                                   <a class="nav-link " aria-current="page" href="student-Dashboard.html">
                                         <img src="./assets/img/img-dashboard/home.png" alt="home">
                                         ملف الطالب
                                    </a>
@@ -170,12 +328,7 @@
                                              الواجب
                                         </a>
                                    </li>
-                                   <li class="nav-item">
-                                        <a class="nav-link" href="student-Dashboard-Balance.html" >
-                                             <img src="./assets/img/img-dashboard/salary.png" alt="salary">
-                                             الرصيد
-                                        </a>
-                                   </li>
+                                 
                                    <li class="nav-item">
                                         <a class="nav-link" href="student-Dashboard-Packages.html" >
                                              <img src="./assets/img/img-dashboard/checklist(2).png" alt="checklist (1)">
@@ -228,57 +381,137 @@
                     <!--end-content-link-->
                     <div class="col-md-9">
                        <div class="content-lecture p-md-4 p-2 rounded-4 mb-3">
-
-                           <ul class="nav nav-tabs nav-tabs-student" id="myTab" role="tablist">
-                              <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">الواجب اليوم</button>
-                              </li>
-                              <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"> واجب المحاضرات السابقة</button>
-                              </li>
+                           <div class="row row-cols-lg-2 row-cols-md-1 row-cols-1 mx-0 component-balance pt-4">
+                              <div class="col d-flex mb-3 mb-md-0">
+                                <div class="w-100 content-balance p-lg-3 p-2 rounded-3 d-grid">
+                                     <h6 class="fs-4">الرصيد الحالي</h6>
+                                     <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                          
+                                          <p class="mb-0 fs-5 fw-medium">$16.69</p>
+                                          <img class="img-balance" src="./assets/img/img-dashboard/salary.png" alt="salary">
+                                     </div>
+       
+                                </div>
                               
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                                      <div class="content-lecture p-md-4 p-2 rounded-4 mb-3 mt-3">
-                                        <div class="d-flex justify-content-between">
-                                          <h6 class="fs-5 fw-bold"> المعلم/محمد على  جمال</h6>
-                                          <div class="content-dete">
-                                               التاريخ:15/1/2024
-                                          </div>
-                                        </div>
-                                         <ul class="component-content-tiem mt-4 mx-4">
-                                              <li class="mb-2">  يرجى حفظ الجزء الثانى </li>
-                                              <li class="mb-2">    مراجعه الجزء الاول  </li>
-                                         </ul>
-                                       
-                                      </div>
                               </div>
-                              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                                      <div class="content-lecture p-md-4 p-2 rounded-4 mb-3 mt-3">
-                                        <div class="d-flex justify-content-between">
-                                          <h6 class="fs-5 fw-bold"> المعلم/محمد على  جمال</h6>
-                                          <div class="content-dete">
-                                               التاريخ:15/1/2024
-                                          </div>
-                                        </div>
-                                         <ul class="component-content-tiem mt-4 mx-4">
-                                              <li class="mb-2">  يرجى حفظ الجزء الثانى </li>
-                                              <li class="mb-2">    مراجعه الجزء الاول  </li>
-                                         </ul>
+                              <div class="col d-flex">
+                                   <div class="w-100 content-balance p-lg-3 p-2 rounded-3">
+                                        <h6 class="fs-4"> الباقة المشترك بها</h6>
+                                        <div class="d-flex justify-content-end  align-items-center img-Packages">
                                        
-                                      </div>
+                                             <img class="img-type" src="./assets/img/1-img.jpg" alt="salary">
+                                        </div>
+          
+                                   </div>
+                                 
                               </div>
+                        
+                         
+                           </div>
 
-                            </div>
                        </div>
-                     
+                       <div class="content-lecture p-md-4 p-2 rounded-4 mb-3">
+                                  <h5 class="fs-3 fw-bold">واجب المحاضرة السابقة </h5>
+                                   <div class="table-stedent table-responsive text-nowrap pt-2">
+                                        <table class="table table-bordered  table-borderless align-middle">
+                                             <thead class="text-center">
+                                                  <tr>
+                                                       <th>التاريخ</th>
+                                                       <th>المعلم</th>
+                                                       <th>عناصر الواجب</th>
+                                                  </tr>
+                                                  
+                                             </thead>
+                                             <tbody>
+                                                  <tr>
+                                                       <td>16/4/2024</td>
+                                                       <td>احمد محمد</td>
+                                                       <td>
+                                                            <ul class="component-content-tiem mx-lg-4 mx-3">
+                                                                 <li class="mb-2">  يرجى حفظ الجزء الثانى </li>
+                                                                 <li class="mb-2">    مراجعه الجزء الاول  </li>
+                                                            </ul> 
+                                                       </td>
+                                                  </tr>
+                                                 
+                                             </tbody>
+                                            
+                                        </table>
+                                   </div>
+                             
+
+                       </div>
                     </div>
                 </div>
           </div>
            
        </section>
       <!--content-dashboard-->
+        <!-- Modal -Student evaluation-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                           <h6 class="text-center fs-5">تقييم الطالب </h6>  
+                           <p>تقييم الطالب خلال الباقة</p>                    
+                         <div class="content-lecture mt-3 mb-3  rounded-4">
+                              <div class="d-flex justify-content-between p-md-4 p-2 align-items-center flex-wrap">
+                                 <div class="d-flex align-items-center">
+                                      <img class="w-15" src="./assets/img/productivity.png" alt="productivity">
+                                      <h6 class="fs-6 mx-2">
+                                           مستوى الطالب بالمحاضره والمهام
+   
+                                      </h6>
+                                 </div>
+                              
+                                 <div class="fs-3 fs-degree">
+                                      <span class="fw-bold">10</span>-9
+                                 </div>
+                              </div>
+                             
+                          </div> 
+                           <!--item-->
+                           <div class="content-lecture mt-3 mb-3  rounded-4">
+                              <div class="d-flex justify-content-between p-md-4 p-2 align-items-center flex-wrap">
+                                 <div class="d-flex align-items-center">
+                                      <img class="w-15" src="./assets/img/productivity.png" alt="productivity">
+                                      <h6 class="fs-6 mx-2">
+                                           مستوى الطالب فى الدورات
+   
+                                      </h6>
+                                 </div>
+                              
+                                 <div class="fs-3 fs-degree">
+                                      <span class="fw-bold">10</span>-9
+                                 </div>
+                              </div>
+                             
+                          </div> 
+                          <!--item-->
+                          <div class="content-lecture mt-3 mb-3  rounded-4">
+                              <div class="d-flex justify-content-between p-md-4 p-2 align-items-center flex-wrap">
+                                 <div class="d-flex align-items-center">
+                                      <img class="w-15" src="./assets/img/productivity.png" alt="productivity">
+                                      <h6 class="fs-6 mx-2">
+                                         النقاط
+   
+                                      </h6>
+                                 </div>
+                              
+                                 <div class="fs-3 fs-degree">
+                                      <span class="fw-bold">100</span>
+                                 </div>
+                              </div>
+                             
+                          </div> 
+                    </div>
+                 
+               </div>
+          </div>
+     </div>
       <!--footer-->
       <footer class="component-footer pt-55">
           <div class="container">
@@ -405,6 +638,23 @@
         <script src="./assets/js/jquery.js"></script>
        <script src="./assets/js/bootstrap.bundle.min.js"></script>
        <script src="./assets/js/loade.js"></script>
+       <script>
+          /**********profil-img********** */
+        function readURL(input) {
+          if (input.files && input.files[0]) {
+              var reader = new FileReader();
+              reader.onload = function(e) {
+                  $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+                  $('#imagePreview').hide();
+                  $('#imagePreview').fadeIn(650);
+              }
+              reader.readAsDataURL(input.files[0]);
+          }
+        }
+        $("#imageUpload").change(function() {
+          readURL(this);
+        });
+        </script>
      
 </body>
 </html>

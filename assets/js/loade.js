@@ -27,7 +27,7 @@ $(document).ready(function(){
          $('.navber-index').css('background-color', '#f5f6f8');
                 
    });
-
+  
 $(window).scroll(function(){
   $(' .navber-index').toggleClass('scrolled', $(this).scrollTop() > 50);
   });

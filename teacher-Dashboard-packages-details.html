@@ -18,7 +18,7 @@
      <link href="./assets/css/style.css" rel="stylesheet">
      <link href="./assets/css/style-dashboard.css" rel="stylesheet">
      <link href="./assets/css/chat.css" rel="stylesheet">
-     <link href="./assets/css/style-student.css" rel="stylesheet">
+
      <link href="./assets/css/style-en.css" rel="stylesheet">
 </head>
 <body>
@@ -89,7 +89,7 @@
                        <img src="./assets/img/hader-login.png" class="img-index" alt="breadcrumb">
                         <div class="row mx-0">
                           <div class="col-12 col-xl-12 breadcrumb-title m-auto d-flex justify-content-center">
-                            <h2 class="text-dark">  الواجب </h2>
+                            <h2 class="text-dark">   المحاضرات</h2>
                           </div>
                        
                      </div>
@@ -107,8 +107,26 @@
                     <!--content-link-->
                     <div class="col-md-3 content-teacher-link rounded-4 pt-2">
                        <div class="img-name-dashboard rounded-4 text-center p-lg-4 p-md-3 p-2">
-                            <img class="img-student-profile rounded-circle" src="./assets/img/img-dashboard/teacher.svg" alt="profile">
-                            <h6 class="fw-semibold fs-4 pt-2 text-capitalize"> mohamed jamal</h6>
+                         <form>
+                              <div class="img-porfoil mb-3">
+                                   <div class="avatar-edit">
+                                     <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                     <label for="imageUpload">
+                                      <img src="./assets/img/pen.png" style="width: 25px;">
+     
+                                     </label>
+                                   </div>
+                                   <div class="avatar-preview">
+                                     <div id="imagePreview" class="img-student-profile rounded-circle"  style="background-image: url(./assets/img/img-dashboard/teacher.svg);">
+                                     </div>
+                                   
+                                   </div>
+                                   </div>
+                           </form>
+                            <h6 class="fw-semibold fs-4 pt-2 text-capitalize" maxlength="20"> mohamed jamal
+
+                              kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+                            </h6>
                        </div>
                        <!--nav-dashboard-->
                        <nav class="navbar navbar-expand-lg navbar-dashboard bg-body-tertiary">
@@ -127,89 +145,41 @@
                                <div class="offcanvas-body">
                                    <ul class="navbar-nav  mb-2 mb-lg-0">
                                    <li class="nav-item">
-                                             <a class="nav-link active" aria-current="page" href="student-Dashboard-index.html">
-                                                  <img src="./assets/img/img-dashboard/home.png" alt="home">
-                                                  الرئيسيه 
-                                             </a>
-                                   </li>
-                                   <li class="nav-item">
-                                   <a class="nav-link active" aria-current="page" href="student-Dashboard.html">
+                                   <a class="nav-link active" aria-current="page" href="teacher-Dashboard.html">
                                         <img src="./assets/img/img-dashboard/home.png" alt="home">
-                                        ملف الطالب
+                                        الرئيسية
                                    </a>
                                    </li>
                                    <li class="nav-item">
-                                   <a class="nav-link" href="student-Dashboard-tables.html">
-                                        <img src="./assets/img/img-dashboard/schedule.png" alt="good-idea">
-                                         جدول  يومى
+                                   <a class="nav-link" href="Distinguished.html">
+                                        <img src="./assets/img/img-dashboard/good-idea.png" alt="good-idea">
+                                        المميزين
                                    </a>
                                    </li>
                          
                                    <li class="nav-item">
-                                   <a class="nav-link" href="student-Dashboard-methodology.html">
-                                        <img src="./assets/img/img-dashboard/user-interface.png" alt="lecture">
-                                        الاقسام المنهجية
-                                    </a>
+                                   <a class="nav-link" href="Lectures.html">
+                                        <img src="./assets/img/img-dashboard/lecture.png" alt="lecture">
+                                        محاضرات
+                                   </a>
                                    </li>
                                    <li class="nav-item">
-                                        <a class="nav-link" href="student-dashboard-Recorded.html" >
+                                        <a class="nav-link" href="teacher-Dashboard-packages.html">
+                                             <img src="./assets/img/img-dashboard/checklist(2).png" alt="lecture">
+                                            الباقات
+                                        </a>
+                                        </li>
+                                   <li class="nav-item">
+                                        <a class="nav-link" href="Administration.html" >
 
-                                             <img src="./assets/img/img-dashboard/user-interface.png" alt="experience">
-                                             الجلسات المسجلة
+                                             <img src="./assets/img/img-dashboard/experience.png" alt="experience">
+                                             الادراة
                                         </a>
                                    </li>
                                    <li class="nav-item">
-                                        <a class="nav-link" href="student-dashboard-courses.html" >
-                                             <img src="./assets/img/img-dashboard/lecture.png" alt="lecture">
-                                             الدورات
-                                        </a>
-                                   </li>
-                                   <li class="nav-item">
-                                        <a class="nav-link" href="student-duty.html" >
-                                             <img src="./assets/img/img-dashboard/planner.png" alt="planner">
-                                             الواجب
-                                        </a>
-                                   </li>
-                                   <li class="nav-item">
-                                        <a class="nav-link" href="student-Dashboard-Balance.html" >
-                                             <img src="./assets/img/img-dashboard/salary.png" alt="salary">
-                                             الرصيد
-                                        </a>
-                                   </li>
-                                   <li class="nav-item">
-                                        <a class="nav-link" href="student-Dashboard-Packages.html" >
-                                             <img src="./assets/img/img-dashboard/checklist(2).png" alt="checklist (1)">
-                                             الباقات
-                                        </a>
-                                   </li>
-                                   <li class="nav-item">
-                                        <a class="nav-link" href="student-Dashboard-content.html" >
+                                        <a class="nav-link" href="Administration-chat.html" >
                                              <img src="./assets/img/img-dashboard/chat.png" alt="chat">
                                              التواصل
-                                        </a>
-                                   </li>
-                                   <li class="nav-item">
-                                        <a class="nav-link" href="Teachers.html" >
-                                             <img src="./assets/img/img-dashboard/experience.png" alt="experience">
-                                             المعلمين
-                                        </a>
-                                   </li>
-                                   <li class="nav-item">
-                                        <a class="nav-link" href="student-Dashboard-Distinguished.html" >
-                                             <img src="./assets/img/img-dashboard/good-idea.png" alt="good-idea">
-                                             المميزين
-                                        </a>
-                                   </li>
-                                   <li class="nav-item">
-                                        <a class="nav-link" href="student-Dashboard-Booking.html" >
-                                             <img src="./assets/img/img-dashboard/wallet.png" alt="wallet">
-                                             الحجز
-                                        </a>
-                                   </li>
-                                   <li class="nav-item">
-                                        <a class="nav-link" href="student-Dashboard-Messages.html" >
-                                             <img src="./assets/img/img-dashboard/chat.png" alt="chat">
-                                             الرسائل
                                         </a>
                                    </li>
                                    <li class="nav-item">
@@ -228,57 +198,101 @@
                     <!--end-content-link-->
                     <div class="col-md-9">
                        <div class="content-lecture p-md-4 p-2 rounded-4 mb-3">
+                           <div class="d-flex align-items-center justify-content-between flex-wrap">
+                              <div>
+                                   <div class="d-flex align-items-center">
+                                        <div class="img-profile-lectuer">
+                                            <div class="span-circle bg-success"></div>
+                                        </div>
+                                        <div class="text-center text-t px-2">
+                                             <h6  class="fw-bold fs-4">   محاضرة1</h6>
+                                             <span class="d-block"> الحالة/  منتهية</span>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="text-center my-3 my-md-0">
+                                   <a  data-bs-toggle="modal" data-bs-target="#exampleModal-duty" class="btn btn-link px-5 py-2 rounded-5 fs-6 fw-bold">  تفاصيل المحاضرة</a>   
 
-                           <ul class="nav nav-tabs nav-tabs-student" id="myTab" role="tablist">
-                              <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">الواجب اليوم</button>
-                              </li>
-                              <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"> واجب المحاضرات السابقة</button>
-                              </li>
-                              
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                                      <div class="content-lecture p-md-4 p-2 rounded-4 mb-3 mt-3">
-                                        <div class="d-flex justify-content-between">
-                                          <h6 class="fs-5 fw-bold"> المعلم/محمد على  جمال</h6>
-                                          <div class="content-dete">
-                                               التاريخ:15/1/2024
-                                          </div>
-                                        </div>
-                                         <ul class="component-content-tiem mt-4 mx-4">
-                                              <li class="mb-2">  يرجى حفظ الجزء الثانى </li>
-                                              <li class="mb-2">    مراجعه الجزء الاول  </li>
-                                         </ul>
-                                       
-                                      </div>
                               </div>
-                              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                                      <div class="content-lecture p-md-4 p-2 rounded-4 mb-3 mt-3">
-                                        <div class="d-flex justify-content-between">
-                                          <h6 class="fs-5 fw-bold"> المعلم/محمد على  جمال</h6>
-                                          <div class="content-dete">
-                                               التاريخ:15/1/2024
-                                          </div>
-                                        </div>
-                                         <ul class="component-content-tiem mt-4 mx-4">
-                                              <li class="mb-2">  يرجى حفظ الجزء الثانى </li>
-                                              <li class="mb-2">    مراجعه الجزء الاول  </li>
-                                         </ul>
-                                       
-                                      </div>
+                              <div class="text-center text-t text-t ">
+                                   <ul class="component-content-tiem compon-item mx-4">
+                                        <li class="mb-2"> التاريخ:<span> 16-40-2024 </span></li>
+
+                                        <li class="mb-2"> المدة من :<span>   03:00  pm </span></li>
+                                        <li class="mb-2">   المدة الى   :<span>   03:00  pm </span></li>
+                                   </ul>
+                                  
                               </div>
+                             
+                           </div>
+                       </div>
+                       <!---->
+                       <div class="content-lecture p-md-4 p-2 rounded-4 mb-3">
+                         <div class="d-flex align-items-center justify-content-between flex-wrap">
+                            <div>
+                                 <div class="d-flex align-items-center">
+                                      <div class="img-profile-lectuer">
+                                          <div class="span-circle bg-warning"></div>
+                                      </div>
+                                      <div class="text-center text-t px-2">
+                                           <h6  class="fw-bold fs-4">   محاضرة1</h6>
+                                           <span class="d-block"> الحالة/ لم تبدا</span>
+                                      </div>
+                                 </div>
+                            </div>
+                            <div class="text-center  my-3 my-md-0">
+                                 <a href="#" class="btn btn-link px-5 py-2 rounded-5 fs-6 fw-bold">  تفاصيل المحاضرة</a>   
 
                             </div>
-                       </div>
-                     
+                            <div class="text-center text-t text-t ">
+                                 <ul class="component-content-tiem compon-item mx-4">
+                                      <li class="mb-2"> التاريخ:<span> 16-40-2024 </span></li>
+
+                                      <li class="mb-2"> المدة من :<span>   03:00  pm </span></li>
+                                      <li class="mb-2">   المدة الى   :<span>   03:00  pm </span></li>
+                                 </ul>
+                                
+                            </div>
+                           
+                         </div>
+                     </div>
+                       <!---->
                     </div>
                 </div>
           </div>
            
        </section>
       <!--content-dashboard-->
+        <div class="modal fade" id="exampleModal-duty" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header d-flex justify-content-between">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel"> تقييم المعلم لطالب</h1>
+                <button type="button" class="btn-close mx-0" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+               <div class="content-lecture mt-3 mb-3  rounded-4">
+                    <div class="d-flex justify-content-between p-md-4 p-2 align-items-center flex-wrap text-center">
+                         <div class="d-flex align-items-center">
+                              <img class="w-25" src="./assets/img/productivity.png" alt="productivity">
+
+                              <h6 class="fs-6 mx-2">
+                                  مستوى الطالب فى الدورات
+                              </h6>
+                         </div>
+                        
+                       <div class="fs-3 fs-degree">
+                         <span class="fw-bold">10</span>-9
+                       </div>
+                    </div>
+                   
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      
       <!--footer-->
       <footer class="component-footer pt-55">
           <div class="container">
@@ -405,6 +419,23 @@
         <script src="./assets/js/jquery.js"></script>
        <script src="./assets/js/bootstrap.bundle.min.js"></script>
        <script src="./assets/js/loade.js"></script>
-     
+       <script src="./assets/js/main.js"></script>
+       <script>
+          /**********profil-img********** */
+        function readURL(input) {
+          if (input.files && input.files[0]) {
+              var reader = new FileReader();
+              reader.onload = function(e) {
+                  $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+                  $('#imagePreview').hide();
+                  $('#imagePreview').fadeIn(650);
+              }
+              reader.readAsDataURL(input.files[0]);
+          }
+        }
+        $("#imageUpload").change(function() {
+          readURL(this);
+        });
+        </script>
 </body>
 </html>
